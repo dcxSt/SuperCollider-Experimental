@@ -69,3 +69,28 @@ Pbind(
 )
 
 // Prand
+(
+Pbind(
+	\note, Prand([0,2,3,5,7,8,11,12],4),
+	\dur, 0.15;
+).play;
+)
+
+// Pwhite
+(
+Pbind(
+	\note, Pseq([0,2,3,5,7,8,11,12],4),
+	\dur, Pwhite(0.15, 0.5);
+).play;
+)
+
+// Expanding you Pattern vocabulary
+
+
+
+
+
+s.quit;
+
+
+
